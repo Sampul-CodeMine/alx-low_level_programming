@@ -11,8 +11,8 @@ int main(void)
 
 	int nums;
 
-	for (nums = '0'; nums <= '9'; nums++)
-		putchar(nums);
-	printf("\n");
+	for (nums = 0; nums <= 10; nums++)
+		putchar((nums % 10) + '0');
+	putchar('\n');
 	return (0);
 }
