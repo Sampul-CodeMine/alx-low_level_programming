@@ -7,11 +7,15 @@
 
 int main(void)
 {
-	/* Program to print alphabets from z- a using putchar */
+	/* Program to print numbers to the base of 16 (Hexadecimal) */
 
-	int alphabet;
+	char alphabet;
+	int nums;
 
-	for (alphabet = ; alphabet >= 'a'; alphabet--)
+	for (nums = 0; nums < 10; nums++)
+		putchar((nums % 10) + '0');
+
+	for (alphabet = 'a'; alphabet <= 'f'; alphabet++)
 		putchar(alphabet);
 	putchar('\n');
 	return (0);
