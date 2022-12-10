@@ -7,8 +7,7 @@
 
 int main(void)
 {
-	/* Program that prints all possible different combinations of three digits.gram to print possible combo of 2-digit numbers  */
-
+	/* Program that prints all possible different combinations of three digits. */
 	int iter1, iter2, iter3;
 
 	for (iter1 = 0; iter1 < 8; iter1++)
