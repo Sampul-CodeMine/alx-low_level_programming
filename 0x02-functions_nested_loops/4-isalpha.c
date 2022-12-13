@@ -8,7 +8,7 @@
 
 int _isalpha(int chr)
 {
-	if ((chr >= 'a' && chr <= 'x')|| (chr >= 'A' && chr <= 'Z'))
+	if ((chr >= 'a' && chr <= 'x') || (chr >= 'A' && chr <= 'Z'))
 		return (1);
 	else
 		return (0);
