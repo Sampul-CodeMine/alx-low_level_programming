@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_alphabet_x10 - This function prints the English alphabets ten (10) times.
+  * print_alphabet_x10 - This function prints the alphabets(10)x.
   * Return: Empty/Nothing
   */
 void print_alphabet_x10(void)
