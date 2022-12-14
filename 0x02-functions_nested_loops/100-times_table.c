@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,7 +11,9 @@ void print_times_table(int num)
 	int iter1, iter2;
 	int product = 0;
 
-	if (num >= 1 && num <= 15)
+	if (num == 0)
+		_putchar('0');
+	else if (num >= 1 && num <= 15)
 	{
 		for (iter1 = 0; iter1 <= num; iter1++)
 		{
