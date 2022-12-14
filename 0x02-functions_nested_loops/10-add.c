@@ -2,6 +2,8 @@
 
 /**
   * add - Function to add two numbers together
+  * @num_one: first argument and must be integer
+  * @nnum_two: second argument and must be integer
   * Return: the value computed
  */
 
