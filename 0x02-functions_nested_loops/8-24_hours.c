@@ -18,19 +18,20 @@ void jack_bauer(void)
 				_putchar('0');
 				_putchar(hours + '0');
 			}
-			else
+			else if (hours >= 10)
 			{
 				_putchar((hours / 10) + '0');
-				_putchar((hours % 20) + '0');
+				_putchar((hours % 10) + '0');
 			}
-			_putchar(':');
 			if (minutes < 10)
 			{
+				_putchar(':');
 				_putchar('0');
 				_putchar(minutes + '0');
 			}
-			else
+			else if (minutes >= 10)
 			{
+				_putchar(':');
 				_putchar((minutes / 10) + '0');
 				_putchar((minutes % 10) + '0');
 			}
