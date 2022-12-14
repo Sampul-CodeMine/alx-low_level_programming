@@ -7,7 +7,7 @@
 int main(void)
 {
 	long int iterator, first_val, second_val, container;
-	
+
 	first_val = 0;
 	second_val = 1;
 	for (iterator = 0; iterator < 50; iterator++)
