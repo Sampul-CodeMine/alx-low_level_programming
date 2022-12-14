@@ -1,26 +1,45 @@
 #include <stdio.h>
 /**
-  * main - Entry point
-  * Return: Always 0 (success)
+  * main - print the first 98 fibonacci numbers.
+  * Return: Nothing.
   */
-
 int main(void)
 {
-	int iterator;
-	unsigned long first_val, second_val, container, total;
+	int count;
+	unsigned long itr, jtr, k;
+	unsigned long m, n, p, carry;
 
-	
-	first_val = 0;
-	second_val = 1;
-	total = 0;
-	for (iterator = 0; iterator < 50; iterator++)
+	count = 0;
+	itr = 0;
+	jtr = 1;
+	for (count = 1; count <= 91; count++)
 	{
-		container = first_val + second_val;
-		first_val = second_val;
-		second_val = container;
-		if (container % 2 == 0 && container < 4000000)
-			total += container;
+		k = itr + jtr;
+		itr = jtr;
+		jtr = k;
+		printf("%lu, ", k);
 	}
-	printf("%lu\n", total);
+	m = itr % 1000;
+	itr = itr / 1000;
+	n = jtr % 1000;
+	jtr = jtr / 1000;
+	while (count <= 98)
+	{
+		carry = (m + n) / 1000;
+		p = (m + n) - carry * 1000;
+		k = (itr + jtr) + carry;
+		m = n;
+		n = p;
+		itr = jtr;
+		jtr = k;
+		if (p >= 100)
+			printf("%lu%lu", k, p);
+		else
+			printf("%lu0%lu", k, p);
+		if (count != 98)
+			printf(", ");
+		count++;
+	}
+	putchar('\n');
 	return (0);
 }
