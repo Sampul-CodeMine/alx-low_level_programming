@@ -18,7 +18,10 @@ void times_table(void)
 		{
 			product = iter1 * iter2;
 			if (iter2 < num)
-				printf("%d,  ", product);
+				if (product < 10)
+					printf("%d,  ", product);
+				else
+					printf("%d, ", product);
 			else
 				printf("%d", product);
 		}
