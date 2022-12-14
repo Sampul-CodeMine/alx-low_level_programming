@@ -13,11 +13,27 @@ void jack_bauer(void)
 	{
 		for (minutes = 0; minutes <= 59; minutes++)
 		{
-			_putchar((hours / 10) + '0');
-			_putchar((hours % 20) + '0');
+			if (hours < 10)
+			{
+				_putchar('0');
+				_putchar(hours + '0');
+			}
+			else
+			{
+				_putchar((hours / 10) + '0');
+				_putchar((hours % 20) + '0');
+			}
 			_putchar(':');
-			_putchar((minutes / 10) + '0');
-			_putchar((minutes % 10) + '0');
+			if (minutes < 10)
+			{
+				_putchar('0');
+				_putchar(minutes + '0');
+			}
+			else
+			{
+				_putchar((minutes / 10) + '0');
+				_putchar((minutes % 10) + '0');
+			}
 			_putchar('\n');
 		}
 	}
