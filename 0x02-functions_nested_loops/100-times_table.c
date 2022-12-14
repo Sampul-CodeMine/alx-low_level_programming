@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_times_table - function to print out the multiplication table.
+  * print_times_table - function to print out the multiplication table
   * @num: numeric value to serve as a boundary for multiplication table
   * Returns: Nothing
   */
