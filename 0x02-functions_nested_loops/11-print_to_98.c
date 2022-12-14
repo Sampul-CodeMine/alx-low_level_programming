@@ -14,19 +14,19 @@ void print_to_98(int num)
 
 	if (num < init)
 	{
-		for (i = num; i <= init; i++)
+		for (i = num; i < init; i++)
 		{
 			printf("%d, ", i);
 		}
-		printf("\n");
+		printf("%d\n", init);
 	}
-	else if (num > init )
+	else if (num > init)
 	{
-		for (i = num; i >= init; i--)
+		for (i = num; i > init; i--)
 		{
 			printf("%d, ", i);
 		}
-		printf("\n");
+		printf("%d\n", init);
 	}
 	else if (num == init)
 	{
