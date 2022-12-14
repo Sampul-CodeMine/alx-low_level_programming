@@ -1,15 +1,12 @@
 #include "main.h"
-
 /**
   * print_times_table - function to print out the multiplication table
   * @num: numeric value to serve as a boundary for multiplication table
   * Returns: Nothing
   */
-
 void print_times_table(int num)
 {
-	int iter1, iter2;
-	int product = 0;
+	int iter1, iter2, product = 0;
 
 	if (num == 0)
 		_putchar('0');
