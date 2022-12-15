@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_number - prints a number preserving its signs
@@ -22,5 +23,5 @@ void print_number(int num)
 	if (temp != 0)
 		/* Recursive function */
 		print_number(temp);
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar((unsigned int) num % 10 + '0');
 }
