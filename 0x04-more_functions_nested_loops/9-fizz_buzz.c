@@ -33,7 +33,7 @@ void fizz_buzz(void)
 		else
 			printf("%d", itr);
 		if (itr != 100)
-			putchar('\n');
+			putchar(' ');
 	}
 	putchar('\n');
 }
