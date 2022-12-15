@@ -1,38 +1,26 @@
 #include "main.h"
 /**
  * print_number - prints a number preserving its signs
- * @num: the number to preserve and print
+ * @num: the integer number to preserve and print
  * Return: Nothing
  */
 
 void print_number(int num)
 {
-	long len, res, i, temp, expo;
+	unsigned int temp;
 
-	res = num;
-	expo = len =  1;
-
+	temp = num;
 	/*Check if the number is negative */
-	if (res < 0)
+	if (num < 0)
 	{
-		res *= -1;
+		num *= -1;
+		temp = num;
 		_putchar('-');
 	}
 
-	temp = res;
-	while (temp >= 10)
-	{
-		len++;
-		temp /= 10;
-	}
-
-	for (i = 1; i < len; i++)
-		expo *= 10;
-
-	while (expo > 1)
-	{
-		_putchar((res / expo) % 10 + '0');
-		expo /= 10;
-	}
-	_putchar(res % 10 + '0');
+	temp /= 10;
+	if (temp != 0)
+		/* Recursive function */
+		print_number(temp);
+	_putchar((unsigned int) n % 10 + '0');
 }
