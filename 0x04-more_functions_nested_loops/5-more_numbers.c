@@ -8,6 +8,7 @@
 void more_numbers(void)
 {
 	int counts = 0, iter = 0;
+
 	while (counts < 10)
 	{
 		while (iter <= 14)
