@@ -10,7 +10,6 @@ void fizz_buzz(void);
 int main(void)
 {
 	fizz_buzz();
-	printf("\n");
 	return (0);
 }
 
@@ -26,12 +25,15 @@ void fizz_buzz(void)
 	for (itr = 1; itr <= 100; itr++)
 	{
 		if (itr % 3 == 0 && itr % 5 == 0)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (itr % 3 == 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (itr % 5 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d ", itr);
+			printf("%d", itr);
+		if (itr != 100)
+			putchar('\n');
 	}
+	putchar('\n');
 }
