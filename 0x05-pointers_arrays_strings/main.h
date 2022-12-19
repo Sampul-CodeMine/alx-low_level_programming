@@ -11,5 +11,6 @@ void _puts(char *);
 void print_rev(char *);
 void puts2(char *);
 void print_array(int *, int);
+char *_strcpy(char *, char *);
 
 #endif /* MAIN_H */
