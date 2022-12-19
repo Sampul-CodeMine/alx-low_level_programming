@@ -13,5 +13,7 @@ void puts2(char *);
 void print_array(int *, int);
 char *_strcpy(char *, char *);
 void puts_half(char *);
+void rev_string(char *);
+
 
 #endif /* MAIN_H */
