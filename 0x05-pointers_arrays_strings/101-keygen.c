@@ -1,49 +1,47 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * checksum - Calculate the sum of every character of a string
- *
- * @p: A pointer to the first character of a string
- * Return: The sum of every character in @p
- */
-unsigned long int checksum(char *p)
+  * main - This program generates random valid passwords for the crackme file
+  * Return: Always 0 (Success)
+  */
+
+int main(void)
 {
-	unsigned long int c;
+	char passwd[14];
+	int index = 0, total = 0, first_half, second_half;
 
-	c = 0;
-	while (*p)
+	srand(time(0));
+	while (total < 2772)
 	{
-		c += *p;
-		p++;
+		passwd[index] = 33 + rand() % 94;
+		total += passwd[index++];
 	}
-	return (c);
-}
-
-/**
- * main - Entry point
- *
- * @ac: Arguments counter
- * @av: Arguments array
- * Return: 1 on error, 0 otherwise
- */
-int main(int ac, char **av)
-{
-	unsigned long int c;
-
-	if (ac != 2)
+	passwd[index] = '\0';
+	if (total != 2772)
 	{
-		printf("Usage: %s password\n", av[0]);
-		return (1);
+		first_half = (total - 2772) / 2;
+		second_half = (total - 2772) / 2;
+		if ((total - 2772) % 2 != 0)
+			first_half++;
+		for (index = 0; passwd[index]; index++)
+		{
+			if (passwd[index] >= (33 + first_half))
+			{
+				passwd[index] -= first_half;
+				break;
+			}
+		}
+		for (index = 0; passwd[index]; index++)
+		{
+			if (passwd[index] >= (33 + second_half))
+			{
+				passwd[index] -= second_half;
+				break;
+			}
+		}
 	}
-	c = checksum(av[1]);
-	/* printf("%lu\n", c); */
-	/* "Talk is cheap. Show me the code." */
-	if (c != 2772)
-	{
-		printf("Wrong password\n");
-		return (1);
-	}
-	printf("Tada! Congrats\n");
+	printf("%s", passwd);
 	return (0);
 }
-
