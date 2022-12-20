@@ -1,4 +1,6 @@
 #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
   * main - This program generates random valid passwords for the crackme file
