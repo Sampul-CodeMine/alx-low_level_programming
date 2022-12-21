@@ -6,5 +6,6 @@
 #include <stdlib.h>
 
 char *_strcat(char *, char *);
+char *_strncat(char *, char *, int);
 
 #endif /* MAIN_H */
