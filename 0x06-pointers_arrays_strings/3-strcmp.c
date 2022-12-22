@@ -2,16 +2,17 @@
 
 /**
  * _strcmp - compares two strings, returns the difference
- * @source_one: first string to be compared
- * @source_two: second string to compared
+ * @s_one: first string to be compared
+ * @s_two: second string to compared
  * Return: the difference between both strings
  */
 
-int _strcmp(char *source_one, char *source_two)
+int _strcmp(char *s_one, char *s_two)
 {
-	int itr, count = 0;
-	for (itr = 0; (source_two[itr] != '\0' && source_two[itr] != '\0') && source_one[itr] == source_two[itr]; itr++)
+	int i, count = 0;
+
+	for (i = 0; s_two[i] != '\0' && s_two[i] != '\0' && s_one[i] == s_two[i]; i++)
 		++count;
 
-	return (source_one[count] - source_two[count]);
+	return (s_one[count] - s_two[count]);
 }
