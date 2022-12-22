@@ -4,14 +4,14 @@
  * main - Entry point
  * Return: Always 0 (Success)
  */
- 
+
 int main(void)
 {
 	char s1[98];
 	char *ptr;
 	int i;
-	
-	for (i = 0; i < 98 - 1; i++)
+
+	for (i = 0; i < (98 - 1); i++)
 	{
 		s1[i] = '*';
 	}
