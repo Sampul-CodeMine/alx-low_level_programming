@@ -12,10 +12,10 @@ void reverse_array(int *arr, int len)
 	int *ptr, itr, temp, x;
 
 	ptr = arr;
-	
+
 	for (itr = 1; itr < len; itr++)
 		ptr++;
-	
+
 	for (x = 0; x < (itr / 2); x++)
 	{
 		temp = arr[x];
