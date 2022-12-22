@@ -5,8 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-char *_strcat(char *, char *);
-char *_strncat(char *, char *, int);
-char *_strncpy(char *, char *, int)
+char *_strcat(char *dest, char *src);
+char *_strncat(char *dest, char *src, int size);
+char *_strncpy(char *dest, char *src, int length);
 
 #endif /* MAIN_H */

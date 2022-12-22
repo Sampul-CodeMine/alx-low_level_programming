@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int copy_lenght)
 		counter++;
 	}
 	/* fill the remaining space with an empty character */
-	while (counter < length)
+	while (counter < copy_lenght)
 	{
 		dest[counter] = '\0';
 		counter++;
