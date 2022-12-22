@@ -6,6 +6,7 @@
  * @chr: pointer to the string to convert
  * Return: the converted string.
  */
+
 char *string_toupper(char *chr)
 {
 	int itr = 0;
@@ -13,8 +14,8 @@ char *string_toupper(char *chr)
 	while (chr[itr] != '\0' && chr[itr])
 	{
 		if (chr[itr] >= 'a' && chr[itr] <= 'z')
-                        chr[itr] -= 32;
-                itr++;
-        }
-        return (chr);
+			chr[itr] -= 32;
+		itr++;
+	}
+	return (chr);
 }
