@@ -2,30 +2,29 @@
 
 /**
 * rot13 - function to encode strings 13 characters
-* @str: pointer to the string to encode
+* @s: pointer to the string to encode
 * Return: ...
 */
 
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int itr = 0;
 
-	while (str[itr])
+	while (s[itr])
 	{
-		while ((str[itr] >= 'a' && str[itr] <= 'z') || (str[itr] >= 'A' && str[itr] <= 'Z'))
+		while ((s[itr] >= 'a' && s[itr] <= 'z') || (s[itr] >= 'A' && s[itr] <= 'Z'))
 		{
-			if ((str[itr] > 'm' && str[itr] <= 'z') || (str[itr] > 'M' && str[itr] <= 'Z'))
+			if ((s[itr] > 'm' && s[itr] <= 'z') || (s[itr] > 'M' && s[itr] <= 'Z'))
 			{
-				str[itr] -= 13;
+				s[itr] -= 13;
 				break;
 			}
 
-			str[itr] += 13;
+			s[itr] += 13;
 			break;
 		}
 
 		itr++;
 	}
-
-	return (str);
+	return (s);
 }
