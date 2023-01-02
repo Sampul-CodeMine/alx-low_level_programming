@@ -9,13 +9,20 @@
 
 char *_strchr(char *str, char chr)
 {
-	while (str != NULL)
+	int a = 0, b;
+
+	while (str[a])
 	{
-		if (*str == chr)
-			return (str);
-		else if (*(str + 1) == chr)
-			return (str + 1);
-		str++;
+		a++;
 	}
-	return (str + 1);
+
+	for (b = 0; b <= a; b++)
+	{
+		if (chr == str[b])
+		{
+			str += b;
+			return (str);
+		}
+	}
+	return (NULL);
 }
