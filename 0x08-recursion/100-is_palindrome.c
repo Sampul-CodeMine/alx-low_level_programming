@@ -18,22 +18,19 @@ int strlen_recursion(char *str)
 /**
   * palindrome_validator - function to check the string length at both ends
   * @str: string to check if it is a palindrome
+  * @length: the length of the string
+  * @counter: number of recursion
   * Return: 1 if true or 0 if false
   */
 
-int palindrome_validator(char *str)
+int palindrome_validator(char *str, int length, int counter)
 {
-	int len = strlen_recursion(str) - 1;
-
-	if (*str == str[len])
-	{
-		str++;
-		len--;
-	}
-	else
-		return (0);
-
-	return (1);
+	if (counter >= length)
+		return (1);
+	else if (str[length] == str[counter])
+		return (palindrome_validator(str, (length - 1), (counter + 1)));
+	
+	return (0);
 }
 
 /**
@@ -44,8 +41,8 @@ int palindrome_validator(char *str)
 
 int is_palindrome(char *str)
 {
-	if (*str == '0')
-		return (1);
+	int length = strlen_recursion(str);
+	int counter = 0;
 
-	return (palindrome_validator(str));
+	return (palindrome_validator(str, (length - 1), counter));
 }
