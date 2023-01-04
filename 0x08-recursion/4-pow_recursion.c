@@ -9,9 +9,10 @@
 
 int _pow_recursion(int num, int pw)
 {
+	/* when the power is less than 0 */
 	if (pw < 0)
 		return (-1);
-	else if (pw == 0)
+	else if (pw == 0) /* when the power is equal to 0 return 1 */
 		return (1);
 	else
 		return (num * (_pow_recursion(num, (pw - 1))));
