@@ -29,7 +29,6 @@ int palindrome_validator(char *str, int length, int counter)
 		return (1);
 	else if (str[length] == str[counter])
 		return (palindrome_validator(str, (length - 1), (counter + 1)));
-	
 	return (0);
 }
 
