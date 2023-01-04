@@ -24,14 +24,14 @@ int find_perfect_square(int base, int num)
 {
 	int square = (num * num);
 
-	if (base < 2)
+	if (base < 0 || square > base)
+		return (-1);
+
+	if (base == 0 || base == 1)
 		return (base);
 
 	if (square == base)
 		return (num);
-
-	if (square > base)
-		return (-1);
 
 	return (find_perfect_square(base, (num + 1)));
 }
