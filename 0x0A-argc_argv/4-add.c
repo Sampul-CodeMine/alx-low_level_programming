@@ -2,7 +2,7 @@
 
 /**
  * main - Program entry point: find the sum of numbers infinitely.
- * @argc: counts the numner of parameters passed to program in the CLI
+ * @argc: counts the number of parameters passed to program in the CLI
  * @argv: pointer to an array of parameters passed to the program in the CLI
  * Return: an integer
  */
