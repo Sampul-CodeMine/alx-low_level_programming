@@ -8,5 +8,4 @@
 
 int _putchar(int);
 
-
 #endif /* MAIN_H */
