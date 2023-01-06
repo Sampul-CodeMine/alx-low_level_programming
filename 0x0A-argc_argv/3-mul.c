@@ -9,18 +9,17 @@
 
 int main(int argc, char *argv[])
 {
-        int num1, num2, mult = 0;
-        
-        if ( argc > 1 && argc <= 3)
-        {
-                num1 = atoi(argv[1]);
-                num2 = atoi(argv[2]);
-                mult = num1 * num2;
-                printf("%d\n", mult);
-                
-                return (0);
-        }
-        printf("Error\n");
+	int num1, num2, mult = 0;
 
-        return (1);
+	if ( argc > 1 && argc <= 3)
+	{
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		mult = num1 * num2;
+		printf("%d\n", mult);
+
+		return (0);
+	}
+	printf("Error\n");
+	return (1);
 }
