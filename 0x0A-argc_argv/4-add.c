@@ -9,35 +9,24 @@
 
 int main(int argc, char *argv[])
 {
-	int counter;
-	unsigned int iter, total = 0;
-	char *current;
+	int total, c, i;
+	unsigned int itr;
 
-	if (argc > 1)
+	total = 0;
+	for (c = 1; c <= argc; c++)
 	{
-		for (counter = 1; counter < argc; counter++)
+		for (itr = 0; argv[c] != NULL && itr < strlen(argv[c]); itr++)
 		{
-			current = argv[counter];
-			for (iter = 0; iter < strlen(current); iter++)
+			if (isdigit(argv[c][itr]) == 0)
 			{
-				if (current[iter] >= 48 && current[iter] <= 57)
-				{
-					total += atoi(current);
-					current++;
-				}
-				else
-				{
-					printf("Error\n");
-					return (1);
-				}
+				printf("Error\n");
+				return (1);
 			}
 		}
-		printf("%d\n", total);
 	}
-	else
-	{
-		printf("0\n");
-	}
+	for (i = 1; i < argc; i++)
+		total += atoi(argv[i]);
+	printf("%d\n", total);
 
 	return (0);
 }
