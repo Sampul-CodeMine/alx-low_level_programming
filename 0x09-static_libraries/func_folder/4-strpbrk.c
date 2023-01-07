@@ -25,5 +25,5 @@ char *_strpbrk(char *src, char *query)
 		}
 		a++;
 	}
-	return (NULL);
+	return ('\0');
 }

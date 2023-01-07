@@ -24,5 +24,5 @@ char *_strchr(char *str, char chr)
 			return (str);
 		}
 	}
-	return (NULL);
+	return ('\0');
 }
