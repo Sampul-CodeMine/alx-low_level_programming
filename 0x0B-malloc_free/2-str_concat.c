@@ -9,34 +9,44 @@
 
 char *str_concat(char *str_1, char *str_2)
 {
-	char *ptr;
-	int str_1_len, str_2_len, itr;
+	int strlen1 = 0, strlen2 = 0;
+	int itr = 0, fulllen = 0;
+	char *str;
 
 	if (str_1 == NULL)
 		str_1 = "";
+
 	if (str_2 == NULL)
 		str_2 = "";
 
-	while (str_1[str_1_len])
-		str_1_len++;
+	while (str_1[strlen1])
+		strlen1++;
 
-	while (str_2[str_2_len])
-		str_2_len++;
+	while (str_2[strlen2])
+		strlen2++;
 
-	ptr = malloc((sizeof(char) * (str_1_len + str_2_len)) + 1);
+	fulllen = strlen1 + strlen;
+	str = malloc((sizeof(char) * fulllen) + 1);
 
-	if (ptr == NULL)
+	if (str == NULL)
 		return (NULL);
-	itr = 0;
-	while (itr < (str_1_len + str_2_len))
-	{
-		if (itr <= str_l_len)
-			ptr[itr] = str_1[itr];
-		if (itr >= str_1_len)
-			ptr[itr] = str_2[str_2_len];
-		itr++;
-	}
-	ptr[itr] = '\0';
 
-	return (ptr);
+	strlen2 = 0;
+
+	while (itr < fulllen)
+	{
+		if (itr <= strlen1)
+			str[itr] = str_1[itr];
+
+		if (itr >= strlen1)
+		{
+			str[itr] = str[strlen2];
+			strlen2++;
+		}
+
+		k++;
+	}
+
+	str[itr] = '\0';
+	return (str);
 }
