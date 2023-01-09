@@ -27,11 +27,16 @@ char *str_concat(char *str_1, char *str_2)
 
 	if (ptr == NULL)
 		return (NULL);
-	for (itr = 0; itr < (str_1_len + str_2_len); itr++)
-		if (itr <= str_1_len)
+	itr = 0;
+	while (itr < (str_1_len + str_2_len))
+	{
+		if (itr <= str_l_len)
 			ptr[itr] = str_1[itr];
 		if (itr >= str_1_len)
 			ptr[itr] = str_2[str_2_len];
+		itr++;
+	}
+	ptr[itr] = '\0';
 
 	return (ptr);
 }
