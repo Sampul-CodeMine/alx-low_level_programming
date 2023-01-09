@@ -12,6 +12,7 @@ char *create_array(unsigned int size, char chr)
 {
 	unsigned int count;
 	char *arrPtr;
+
 	if (size > 0)
 	{
 		arrPtr = malloc(sizeof(char) * size);
