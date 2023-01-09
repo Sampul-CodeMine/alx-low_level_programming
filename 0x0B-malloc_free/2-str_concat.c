@@ -28,10 +28,10 @@ char *str_concat(char *str_1, char *str_2)
 	if (ptr == NULL)
 		return (NULL);
 	for (itr = 0; itr < (str_1_len + str_2_len); itr++)
-		if (itr < str_1_len)
+		if (itr <= str_1_len)
 			ptr[itr] = str_1[itr];
-		else
-			ptr[itr] = str_2[itr - str_1_len];
+		if (itr >= str_1_len)
+			ptr[itr] = str_2[str_2_len];
 
 	return (ptr);
 }
