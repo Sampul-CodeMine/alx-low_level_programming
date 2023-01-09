@@ -25,7 +25,7 @@ char *str_concat(char *str_1, char *str_2)
 	while (str_2[strlen2])
 		strlen2++;
 
-	fulllen = strlen1 + strlen;
+	fulllen = strlen1 + strlen2;
 	str = malloc((sizeof(char) * fulllen) + 1);
 
 	if (str == NULL)
@@ -44,7 +44,7 @@ char *str_concat(char *str_1, char *str_2)
 			strlen2++;
 		}
 
-		k++;
+		itr++;
 	}
 
 	str[itr] = '\0';
