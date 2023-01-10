@@ -15,8 +15,10 @@ char *str_concat(char *str_1, char *str_2)
 	int full_size; /* buffer size for the full string */
 	char *new_str; /* the new string to be created */
 
-	if (str_1 == NULL) str_1 = "";
-	if (str_2 == NULL) str_2 = "";
+	if (str_1 == NULL)
+		str_1 = "";
+	if (str_2 == NULL)
+		str_2 = "";
 	for (strlen1 = 0; str_1[strlen1]; strlen1++)
 	{}
 	for (strlen2 = 0; str_2[strlen2]; strlen2++)
@@ -26,7 +28,8 @@ char *str_concat(char *str_1, char *str_2)
 
 	new_str = malloc(sizeof(char) * full_size);
 
-	if (new_str == NULL) return (NULL);
+	if (new_str == NULL)
+		return (NULL);
 
 	for (itr = 0; itr < full_size; itr++)
 	{
