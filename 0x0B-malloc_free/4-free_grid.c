@@ -1,21 +1,18 @@
-#include "holberton.h"
-#include <stdlib.h>
+#include "main.h"
 
 /**
-  * free_grid - ...
-  * @grid: ...
-  * @height: ...
-  *
-  * Return: ...
+  * free_grid - function to free up elements in a 2-D grid or matrix
+  * @grid: the grid to point to
+  * @height: height of the grid/matrix
+  * Return: Nothing
   */
+
 void free_grid(int **grid, int height)
 {
-	int i;
+	int itr;
 
-	for (i = 0; i < height; i++)
-	{
-		free(grid[i]);
-	}
+	for (itr = 0; itr < height; itr++)
+		free(grid[itr]);
 
 	free(grid);
 }
