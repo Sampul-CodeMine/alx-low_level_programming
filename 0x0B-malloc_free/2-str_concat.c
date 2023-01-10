@@ -9,44 +9,31 @@
 
 char *str_concat(char *str_1, char *str_2)
 {
-	int strlen1 = 0, strlen2 = 0;
-	int itr = 0, fulllen = 0;
-	char *str;
+	int strlen1; /* length of the first string */
+	int strlen2; /* length of the second string */
+	int itr; /* iterator */
+	int full_size; /* buffer size for the full string */
+	char *new_str; /* the new string to be created */
 
-	if (str_1 == NULL)
-		str_1 = "";
+	if (str_1 == NULL) str_1 = "";
+	if (str_2 == NULL) str_2 = "";
+	for (strlen1 = 0; str_1[strlen1]; strlen1++)
+	{}
+	for (strlen2 = 0; str_2[strlen2]; strlen2++)
+	{}
 
-	if (str_2 == NULL)
-		str_2 = "";
+	full_size = strlen1 + strlen2 + 1;
 
-	while (str_1[strlen1])
-		strlen1++;
+	new_str = malloc(sizeof(char) * full_size);
 
-	while (str_2[strlen2])
-		strlen2++;
+	if (new_str == NULL) return (NULL);
 
-	fulllen = strlen1 + strlen2;
-	str = malloc((sizeof(char) * fulllen) + 1);
-
-	if (str == NULL)
-		return (NULL);
-
-	strlen2 = 0;
-
-	while (itr < fulllen)
+	for (itr = 0; itr < full_size; itr++)
 	{
-		if (itr <= strlen1)
-			str[itr] = str_1[itr];
-
-		if (itr >= strlen1)
-		{
-			str[itr] = str[strlen2];
-			strlen2++;
-		}
-
-		itr++;
+		if (itr < strlen1)
+			new_str[itr] = str_1[itr];
+		else
+			new_str[itr] = str_2[itr - strlen1];
 	}
-
-	str[itr] = '\0';
-	return (str);
+	return (new_str);
 }
