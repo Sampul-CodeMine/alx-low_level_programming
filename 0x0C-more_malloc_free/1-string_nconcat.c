@@ -10,10 +10,10 @@
 
 char *string_nconcat(char *str_1, char *str_2, unsigned int size)
 {
-	int strlen1; /* length of the first string */
-	int strlen2; /* length of the second string */
-	int itr; /* iterator */
-	int full_size; /* buffer size for the full string */
+	unsigned int strlen1; /* length of the first string */
+	unsigned int strlen2; /* length of the second string */
+	unsigned int itr; /* iterator */
+	unsigned int full_size; /* buffer size for the full string */
 	char *new_str; /* the new string to be created */
 
 	if (str_1 == NULL)
