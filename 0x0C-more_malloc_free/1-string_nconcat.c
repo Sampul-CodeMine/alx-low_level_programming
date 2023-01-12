@@ -10,17 +10,10 @@
 
 char *string_nconcat(char *str_1, char *str_2, unsigned int size)
 {
-	unsigned int strlen1; /* length of the first string */
-	unsigned int strlen2; /* length of the second string */
-	unsigned int itr; /* iterator */
-	unsigned int full_size; /* buffer size for the full string */
+	unsigned int strlen1, strlen2, itr, size;
 	char *new_str; /* the new string to be created */
 
-	strlen1 = 0;
-	strlen2 = 0;
-	itr = 0;
-	full_size = 0;
-
+	strlen1 = 0, strlen2 = 0, itr = 0, full_size = 0;
 	if (str_1 == NULL)
 		str_1 = "";
 	if (str_2 == NULL)
@@ -29,17 +22,13 @@ char *string_nconcat(char *str_1, char *str_2, unsigned int size)
 	{}
 	for (strlen2 = 0; str_2[strlen2]; strlen2++)
 	{}
-
 	if (size >= strlen2)
 		full_size = strlen1 + strlen2;
 	else
 		full_size = strlen1 + size;
-
 	new_str = malloc(sizeof(char) * full_size + 1);
-
 	if (new_str == NULL)
 		return (NULL);
-
 	strlen2 = 0;
 	while (itr < full_size)
 	{
@@ -52,8 +41,6 @@ char *string_nconcat(char *str_1, char *str_2, unsigned int size)
 		}
 		itr++;
 	}
-
 	new_str[itr] = '\0';
-
 	return (new_str);
 }
