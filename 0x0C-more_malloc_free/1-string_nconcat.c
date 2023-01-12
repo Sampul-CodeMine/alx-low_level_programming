@@ -26,8 +26,6 @@ char *string_nconcat(char *str_1, char *str_2, unsigned int size)
 	{}
 	if (strlen2 > size)
 		strlen2 = size;
-	else
-		size = strlen2;
 
 	full_size = strlen1 + strlen2 + 1;
 
