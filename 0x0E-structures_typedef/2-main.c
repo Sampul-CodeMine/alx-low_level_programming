@@ -17,7 +17,6 @@ int main(void)
 
     ny_dog.name = "Popy";
     ny_dog.age = 3.5;
-    ny_dog.owner = "";
     print_dog(&ny_dog);
     return (0);
 }
