@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
-	
+
 	printf("%d\n", ptr_func(first_num, second_num));
 	return (0);
 }

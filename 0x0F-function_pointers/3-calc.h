@@ -7,17 +7,12 @@
 
 /**
  * struct op - Structure op
- * @op: The mathematical operator 
+ * @op: The mathematical operator
  * @f: The function to call for math operation
  */
 
 typedef struct op
 {
-	/**
-	 * Description: @f will be a specified integer function that will accept
-	 * two (2) int arguments.
-	 */
-
 	char *op;
 	int (*f)(int, int);
 } op_t;
