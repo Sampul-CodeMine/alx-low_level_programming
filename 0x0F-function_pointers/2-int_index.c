@@ -4,7 +4,7 @@
  * int_index - a program that searches an array for integer elements
  * @array: the array to search
  * @size: the size of the array
- * @cmp(int): the function pointer to be used to compare values and return 0.
+ * @cmp: the function pointer to be used to compare values and return 0.
  * Return: -1 if no element found or size less than 0 else 0 (Success)
  */
 
