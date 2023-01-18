@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 		printf("Error\n")
 		exit(1);
 	}
-	
+
 	mem_bytes = atoi(argv[1]);
 
 	if (mem_bytes < 0)
