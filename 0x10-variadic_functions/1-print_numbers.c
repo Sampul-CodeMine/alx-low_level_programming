@@ -5,7 +5,7 @@
  * a character also specified in the argument
  * @separator: the character to separate each numbers printer
  * @num: number of variadic arguments to be supplied
- * @...: Variadic arguments 
+ * @...: Variadic arguments
  * Return: Nothing
  */
 
