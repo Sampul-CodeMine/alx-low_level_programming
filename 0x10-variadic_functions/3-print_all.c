@@ -14,37 +14,37 @@ void print_str(va_list);
 
 void print_all(const char *const format, ...)
 {
-        unsigned int itr1, itr2;
-        char *delimiter;
-        va_list arg;
-        print_formats valid_format[] = {
-            {"c", print_char},
-            {"i", print_int},
-            {"f", print_float},
-            {"s", print_str},
-            {NULL, NULL}
-        };
+	unsigned int itr1, itr2;
+	char *delimiter;
+	va_list arg;
+	print_formats valid_format[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_str},
+		{NULL, NULL}
+	};
 
-        itr1 = itr2 = 0;
-        delimiter = "";
+	itr1 = itr2 = 0;
+	delimiter = "";
 
-        va_start(arg, format);
-        while (format && format[itr1])
-        {
-                itr2 = 0;
-                while (itr2 < 4)
-                {
-                        if (format[itr1] == *valid_format[itr2].format)
-                        {
-                                printf("%s", delimiter);
-                                valid_format[itr2].func(arg);
-                                delimiter = ", ";
-                        }
-                        itr2++;
-                }
-                itr1++;
-        }
-        printf("\n");
+	va_start(arg, format);
+	while (format && format[itr1])
+	{
+		itr2 = 0;
+		while (itr2 < 4)
+		{
+			if (format[itr1] == *valid_format[itr2].format)
+			{
+				printf("%s", delimiter);
+				valid_format[itr2].func(arg);
+				delimiter = ", ";
+			}
+			itr2++;
+		}
+		itr1++;
+	}
+	printf("\n");
 }
 
 /**
@@ -55,7 +55,7 @@ void print_all(const char *const format, ...)
 
 void print_char(va_list chr)
 {
-        printf("%c", va_arg(chr, int));
+	printf("%c", va_arg(chr, int));
 }
 
 /**
@@ -66,7 +66,7 @@ void print_char(va_list chr)
 
 void print_int(va_list integ)
 {
-        printf("%d", va_arg(integ, int));
+	printf("%d", va_arg(integ, int));
 }
 
 /**
@@ -77,7 +77,7 @@ void print_int(va_list integ)
 
 void print_float(va_list flt)
 {
-        printf("%f", va_arg(flt, double));
+	printf("%f", va_arg(flt, double));
 }
 
 /**
@@ -88,10 +88,10 @@ void print_float(va_list flt)
 
 void print_str(va_list str)
 {
-        char *string_temp;
+	char *string_temp;
 
-        string_temp = va_arg(str, char *);
-        if (string_temp == 0)
-                string_temp = "(nil)";
-        printf("%s", string_temp);
+	string_temp = va_arg(str, char *);
+	if (string_temp == 0)
+		string_temp = "(nil)";
+	printf("%s", string_temp);
 }
