@@ -1,4 +1,4 @@
-# FUCTION POINTERS IN C PROGRAMMING
+# FUNCTION POINTERS IN C PROGRAMMING
 
 In this phase of Low Level Programming using C programming language, we will be dealing with function pointers.
 
