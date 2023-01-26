@@ -3,7 +3,7 @@
 /**
  * string_len - function to returns the length of a string (custom strlen func)
  * @str: The string to count
- * Return: length of a string 
+ * Return: length of a string
 */
 
 int string_len(const char *str)
