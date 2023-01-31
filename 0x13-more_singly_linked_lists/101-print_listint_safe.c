@@ -5,7 +5,7 @@
   * @head:
   * Return: what does it return?
   */
- 
+
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *temp, *tmp_loc;
@@ -20,7 +20,7 @@ size_t print_listint_safe(const listint_t *head)
 		temp = temp->next;
 		itr++;
 		printf("[%p] %d\n", (void *)tmp_loc, tmp_loc->n);
-		if(tmp_loc <= temp)
+		if (tmp_loc <= temp)
 		{
 			printf("-> [%p] %d\n", (void *)temp, temp->n);
 			break;
