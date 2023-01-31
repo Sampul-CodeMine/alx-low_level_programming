@@ -15,7 +15,7 @@ listint_t *add_nodeint_end(listint_t **head, const int str)
 	if (new_list == NULL)
 		return (NULL);
 
-	new_list->n = n;
+	new_list->n = str;
 	new_list->next = NULL;
 
 	if (*head == NULL)
@@ -28,5 +28,5 @@ listint_t *add_nodeint_end(listint_t **head, const int str)
 		temp_loc = temp_loc->next;
 
 	temp_loc->next = new_list;
-	return (*temp_loc);
+	return (temp_loc);
 }
