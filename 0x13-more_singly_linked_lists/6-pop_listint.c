@@ -1,10 +1,11 @@
 #include "lists.h"
-#include <stdlib.h>
+
 /**
   * pop_listint - pops the head of a list and returns the head's data
   * @head: head of the list
   * Return: contents of head
   */
+
 int pop_listint(listint_t **head)
 {
 	int data;
