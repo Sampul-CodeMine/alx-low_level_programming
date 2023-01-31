@@ -7,7 +7,7 @@
  * Return: The address of the new list or NULL if it failed
  */
 
-listint_t *add_nodeint_end(listint_t **head, const char *str)
+listint_t *add_nodeint_end(listint_t **head, const int str)
 {
 	listint_t *new_list, *temp_loc;
 
