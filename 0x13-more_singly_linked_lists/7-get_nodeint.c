@@ -1,21 +1,21 @@
 #include "lists.h"
 /**
-  * get_nodeint_at_index - gets the nth node of the list
+  * get_nodeint_at_index - a function to get the last node of a list
   * @head: head of the list
-  * @index: which node to stop at
+  * @idx: which node to stop at
   * Return: pointer to the nth node
   */
-listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int idx)
 {
-	unsigned int i;
+	unsigned int itr;
 
-	i = 0;
-	while (i < index)
+	itr = 0;
+	while (itr < idx)
 	{
 		if (head->next == NULL)
 			return (NULL);
 		head = head->next;
-		i++;
+		itr++;
 	}
 	return (head);
 }
