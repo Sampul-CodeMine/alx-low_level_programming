@@ -37,7 +37,7 @@ size_t print_listint_safe(const listint_t *head)
 
 /**
  * list_looping - function to loop through a list's nodes
- * @head: pointer to the singly linked list 
+ * @head: pointer to the singly linked list
  * Return: 0 if not looped else return the number of unique nodes in the list
  */
 
@@ -48,7 +48,7 @@ size_t list_looping(const listint_t *head)
 
 	if (head == NULL || head->next == NULL)
 		return (0);
-	
+
 	slow = head->next;
 	fast = (head->next)->next;
 	while (fast)
