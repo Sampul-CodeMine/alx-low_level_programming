@@ -8,7 +8,7 @@
   * Return: pointer to head of list
   */
 
-listint_t *insert_nodeint_at_idx(listint_t **head, unsigned int idx, int num)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int num)
 {
 	listint_t *current_loc, *new_node;
 
