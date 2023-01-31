@@ -7,7 +7,7 @@
  * Return: a pointer to the current position/location in the list
  */
 
-listint_t *add_nodeint(listint_t **head, const int *str)
+listint_t *add_nodeint(listint_t **head, const int str)
 {
 	listint_t *temp_loc;
 
