@@ -1,31 +1,45 @@
 #include "main.h"
 
 /**
- * binary_to_uint - function that converts a binary number to an unsigned int
- * @bin: the binary streamm converted into integer
- * Return: converted number else 0 if the word contains a character not 0 or 1
+ * _strlen - Returns the length of a string
+ * @s: String to count
+ * Return: String length
  */
 
-unsigned int binary_to_uint(const char *bin)
+int _strlen(const char *s)
 {
-	unsigned int strlen = 0;
-	unsigned int itr = 0, total = 0, i = 0;
+	int c = 0;
 
-	while (bin[itr])
-		itr++;
+	while (s[c])
+		c++;
 
-	strlen = itr;
+	return (c);
+}
 
-	if (bin == NULL)
+/**
+ * binary_to_uint - Converts a binary number to an unsigned int
+ * @b: The binary string to converts
+ * Return: The positive number converted from a binary
+ */
+
+unsigned int binary_to_uint(const char *b)
+{
+	unsigned int len = 0, count = 0, sum = 0;
+
+	if (b == NULL)
 		return (0);
 
-	while (strlen--)
+	len = _strlen(b);
+	while (len--)
 	{
-		if (bin[strlen] != 48 && bin[strlen] != 49)
+		if (b[len] != 48 && b[len] != 49)
 			return (0);
-		if (bin[strlen] == 49)
-			total = total  + (1 << i);
-		i++;
+
+		if (b[len] == 49)
+			sum += 1 << count;
+
+		count++;
 	}
-	return (total);
+
+	return (sum);
 }
