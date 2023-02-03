@@ -17,7 +17,7 @@ Source codes that manipulates bits make use of the `bitwise` operators. The `bit
 
 Bit manipulation, in some cases can drastically reduce the need to loop through a data structure and can speed up execution as bit manipulation are processed in parallel.
 
-Before we move deeply into Bit manipulation operations on digits, we will quickly bring to your rememberance the following `**Logic and Truth Table**`.
+Before we move deeply into Bit manipulation operations on digits, we will quickly bring to your remembrance the following **Logic and Truth Table**.
 
 The Computer systems work with low level digits which are the binary digits (`0's and 1's`).
 
@@ -29,7 +29,7 @@ The Computer systems work with low level digits which are the binary digits (`0'
 ### `AND &&` LOGIC
 
 The `AND` logic has a rule and the rule states that:
-> For a truth value of true to be outputed, all statements tested, must return `true` else its output will be `false`.
+> For a truth value of true to be outputted, all statements tested, must return `true` else its output will be `false`.
 > If you are comparing two different statements, each statements must logically be true (`1`) for the comparison to produce a true (`1`) value else if anyone is false (`0`), the whole statement becomes false(`0`).
 
 An example is given below:
