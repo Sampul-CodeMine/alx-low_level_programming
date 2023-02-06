@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * create_file - function to create a file if it does not exist and write to it.
- * @ile_name: name of the file to create
- * @contents: a NULL terminated string to be written to the created file 
+ * create_file - function to create a file if it does not exist & write to it
+ * @file_name: name of the file to create
+ * @contents: a NULL terminated string to be written to the created file
  * Return: On success (1), on failure (-1)
  * Description: The function creates a file which must have the file
  * permissions 'rw'. if the file already exists, it truncates the file.
@@ -22,8 +22,8 @@ int create_file(const char *file_name, char *contents)
 
 	if (filedesc == -1)
 		return (-1);
-	
-	for(length = 0; contents[length]; length++)
+
+	for (length = 0; contents[length]; length++)
 	{}
 	if (contents)
 		write(filedesc, contents, length);

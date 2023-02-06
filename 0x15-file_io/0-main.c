@@ -2,6 +2,8 @@
 
 /**
  * main - check the code
+ * @ac: number of arguments passed
+ * @av: pointer to the arguments values passed on the CLI
  * Return: Always 0.
  */
 

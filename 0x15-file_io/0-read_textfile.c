@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * read_textfile - function to read the content of a textfile and print out to STDOUT
- * @ile_name: fullpath of the file to be read 
+ * read_textfile - function to read the content of a textfile and print
+ * out to STDOUT
+ * @file_name: fullpath of the file to be read
  * @chrs: characters to read.
  * Return: on success return 0
  */
