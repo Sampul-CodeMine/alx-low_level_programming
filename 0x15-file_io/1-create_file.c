@@ -16,8 +16,9 @@ int create_file(const char *file_name, char *contents)
 	int filedesc;
 	int length = 0;
 
-	if (file_name == NULL)
+	if (!file_name)
 		return (-1);
+		
 	filedesc = open(file_name, O_RDWR | O_CREAT, O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (filedesc == -1)
@@ -25,7 +26,7 @@ int create_file(const char *file_name, char *contents)
 
 	while (contents[length])
 		length++;
-		
+
 	if (contents)
 		write(filedesc, contents, length);
 
