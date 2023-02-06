@@ -2,7 +2,7 @@
 
 /**
  * file_copier - function to copy the content of a file to another file.
- * @src: the source file to copy from 
+ * @src: the source file to copy from
  * @dest: the file to copy contents to
  * Return: nothing
  */
@@ -52,9 +52,9 @@ void file_copier(const char *src, const char *dest)
  * main - Entry point
  * @argc: The argument count
  * @argv: The argument vector
- *
- * Return: ...
+ * Return: Nothing
  */
+
 int main(int argc, char **argv)
 {
         if (argc != 3)
