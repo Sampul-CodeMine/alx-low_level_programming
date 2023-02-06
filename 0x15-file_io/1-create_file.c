@@ -18,13 +18,14 @@ int create_file(const char *file_name, char *contents)
 
 	if (file_name == NULL)
 		return (-1);
-	filedesc = open(file_name, O_RDWR | O_CREAT, O_TRUNC, 0600);
+	filedesc = open(file_name, O_RDWR | O_CREAT, O_TRUNC, S_IRUSR | S_IWUSR);
 
 	if (filedesc == -1)
 		return (-1);
 
-	for (length = 0; contents[length]; length++)
-	{}
+	while (contents[length])
+		length++;
+		
 	if (contents)
 		write(filedesc, contents, length);
 
