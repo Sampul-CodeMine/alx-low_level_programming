@@ -83,5 +83,4 @@ To be able to use this dynamic library, you have to install the dynamic library 
 
 `./len` This will run the executable with the Linker fetching each function from the library archive.
 
-
-
+> Dukeson Ehigboria O.
