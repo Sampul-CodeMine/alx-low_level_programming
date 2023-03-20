@@ -62,5 +62,26 @@ To be able to use this dynamic library, you have to install the dynamic library 
 
 ```sudo ldconfig```
 
+## A Simple Rundown of how to add the library to the Library Path
 
-> Ehigboria Dukeson
+`nm -D lib_dyn.dll` or `nm -D lib_dyn.so` 
+
+- This will list all the object files inside the dynamic library archive
+
+`gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -l_dyn -o len` 
+
+- This will create an executable file. The Linker will link the the object files from the library specified and execute the functions specified in the main.c file
+
+`ldd len`
+
+- This loads the executable file and the library but you will get an error because the library has not been loaded to the memory
+
+`export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH`
+
+- This adds the library to the Library path on your Linux OS
+- When you run `ldd len` you will see the dynamic library loaded.
+
+`./len` This will run the executable with the Linker fetching each function from the library archive.
+
+
+
