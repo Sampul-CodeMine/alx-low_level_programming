@@ -1,3 +1,3 @@
 #!/bin/bash
-wget -q --output-document=$HOME/libcracker.so https://github.com/holbertonschool/0x18.c/tree/master/libcracker.so
-export LD_PRELOAD=$HOME/libcracker.so
+wget -P /tmp https://github.com/sidneyriffic/holbertonschool-low_level_programming/raw/master/0x17-dynamic_libraries/libcracker.so
+export LD_PRELOAD=/tmp/libcracker.so
