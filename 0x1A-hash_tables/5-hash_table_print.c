@@ -27,8 +27,7 @@ void hash_table_print(const hash_table_t *ht)
 				{
 					if (jtr)
 						printf(", ");
-					printf("'%s': '%s'", item->key,\
-					       item->value);
+					printf("'%s': '%s'", item->key, item->value);
 					item = item->next;
 					jtr = 1;
 				}
