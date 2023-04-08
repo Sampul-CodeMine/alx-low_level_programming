@@ -82,4 +82,17 @@ typedef struct shash_table_s
 	shash_node_t *stail;
 } shash_table_t;
 
+/* Prototypes for PHP shash table */
+
+shash_table_t *shash_table_create(unsigned long int);
+int shash_table_set(shash_table_t *, const char *, const char *);
+char *shash_table_get(const shash_table_t *, const char *);
+void shash_table_print(const shash_table_t *);
+void shash_table_print_rev(const shash_table_t *);
+void shash_table_delete(shash_table_t *);
+
+
+/* Custom function to add sorted elements */
+void add_sorted_element(shash_table_t *ht, shash_node_t *shnode);
+
 #endif /* _HASH_TABLES_H */
