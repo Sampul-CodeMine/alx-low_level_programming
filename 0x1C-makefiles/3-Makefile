@@ -1,0 +1,19 @@
+# Little Advance Simple makefile
+
+CC=gcc
+SRC=main.c school.c
+OBJ=$(SRC:.c=.o)
+NAME=school
+RM=rm -rf
+
+all:$(SRC) $(NAME)
+$(NAME): $(OBJ)
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(OBJ) -o $@
+
+clean:
+	$(RM) *~ $(NAME)
+fclean:
+	$(RM) *~ $(NAME) $(OBJ)
+oclean:
+	$(RM) $(OBJ)
+re: oclean all

@@ -1,0 +1,9 @@
+# First useful makefile
+CC=gcc
+SRC=main.c school.c
+NAME=school
+OBJ=$(SRC:.c=.o)
+
+all:$(SRC) $(NAME)
+$(NAME): $(OBJ)
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(OBJ) -o $@

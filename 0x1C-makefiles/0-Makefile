@@ -1,0 +1,4 @@
+# Simple makefile
+
+all: main.c school.c
+	gcc -Wall -Werror -Wextra -pedantic -std=gnu89 main.c school.c -o school

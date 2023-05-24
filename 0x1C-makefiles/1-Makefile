@@ -1,0 +1,6 @@
+# Little advance than Simple makefile
+CC=gcc
+SRC=main.c school.c
+
+all: $(SRC)
+	$(CC) -Wall -Werror -Wextra -pedantic -std=gnu89 $(SRC) -o school
