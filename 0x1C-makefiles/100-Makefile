@@ -1,21 +1,25 @@
 # A complete advance makefile
 
-NAME=school
 CC=gcc
-CFLAGS=-Wall -Werror -Wextra -pedantic -std=gnu89
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
-
-.PHONY: clean oclean fclean re all $(NAME)
+NAME=school
+RM=rm -rf
+CFLAGS=-Wall -Werror -Wextra -pedantic -std=gnu89
 
 all: $(SRC) $(NAME)
 	
-$(NAME): $(OBJ) m.h
+$(NAME): m.h $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $@
 
 clean:
 	$(RM) *~ $(NAME)
+
 oclean:
 	$(RM) $(OBJ)
+
 fclean: oclean clean
+
 re: oclean all
+
+.PHONY: clean oclean fclean re all $(NAME)
