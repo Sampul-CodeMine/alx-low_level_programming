@@ -56,7 +56,8 @@ int jump_search(int *, size_t, int);
 int interpolation_search(int *, size_t, int);
 int get_position(int *, int, size_t, size_t);
 
-
+/* Exponential Search */
+int exponential_search(int *, size_t, int);
 
 
 
