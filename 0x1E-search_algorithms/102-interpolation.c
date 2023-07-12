@@ -4,19 +4,17 @@
  * get_position - function to get the index of the search value
  * @arr: the array with integer elements
  * @value: the value to search for
- * @low: the lowest index from the array
- * @high: the highest index from the array
+ * @lo: the lowest index from the array
+ * @hi: the highest index from the array
  * Return: the index of the value from the array
  */
 
-int get_position(int *arr, int value, int low, int high)
+int get_position(int *arr, int value, size_t lo, size_t hi)
 {
-	int a, b, c, pos;
+	size_t pos;
 
-	a = (value - arr[low]);
-	b = (arr[high] - arr[low]);
-	c = (double)(high - low);
-	pos = low + ((c / b) * a);
+	pos = lo + (((double)(hi - lo) / (arr[hi] - arr[lo]))
+			* (value - arr[lo]));
 	return (pos);
 }
 
@@ -31,34 +29,29 @@ int get_position(int *arr, int value, int low, int high)
 
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t low = 0, high = (size - 1), pos;
+	size_t pos, low, high;
 
-	if (array == NULL || !array)
+	if (array == NULL)
 		return (-1);
 
-	while (low < high)
+	for (low = 0, high = (size - 1); high >= low;)
 	{
-		pos = get_position(array, value, low, high);
-		if (pos > (size - 1))
-		{
-			printf("Value checked array[%lu] is out of range\n", pos);
-			return (-1);
-		}
+		pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
+		if (pos < size)
+			printf("Value checked array[%ld] = [%d]\n", pos, array[pos]);
 		else
-			printf("Value checked array[%lu] = [%d]\n", pos, array[pos]);
-		if (pos == 0 && array[pos] > value)
-			return (-1);
+		{
+			printf("Value checked array[%ld] is out of range\n", pos);
+			break;
+		}
+
+		if (array[pos] == value)
+			return (pos);
 		if (array[pos] > value)
 			high = pos - 1;
-		else if (array[pos] < value)
-			low = pos + 1;
 		else
-			return (pos);
+			low = pos + 1;
 	}
-	if (array[low] == value)
-	{
-		printf("Value checked array[%lu] = [%d]\n", low, array[low]);
-		return (low);
-	}
+
 	return (-1);
 }

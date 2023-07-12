@@ -54,7 +54,7 @@ int jump_search(int *, size_t, int);
 
 /* Interpolation Search */
 int interpolation_search(int *, size_t, int);
-int get_position(int *, int, int, int);
+int get_position(int *, int, size_t, size_t);
 
 
 
