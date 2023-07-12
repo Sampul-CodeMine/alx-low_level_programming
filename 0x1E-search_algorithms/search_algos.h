@@ -52,4 +52,26 @@ int binary_search(int *, size_t, int);
 /* Jump Search */
 int jump_search(int *, size_t, int);
 
+/* Interpolation Search */
+int interpolation_search(int *, size_t, int);
+int get_position(int *, int, int, int);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #endif /* SEARCH_ALGOS_H */
