@@ -64,16 +64,11 @@ int bin_search(int *, size_t, size_t, int);
 int advanced_binary(int *, size_t, int);
 int rec_adv_bin_search(int *, size_t, size_t, int);
 
+/* Jump Search in a Singly-Linked List */
+listint_t *jump_list(listint_t *, size_t, int);
+listint_t *move_the_list(listint_t *, int);
 
-
-
-
-
-
-
-
-
-
-
+/* Linear Search in a Skip List */
+skiplist_t *linear_skip(skiplist_t *, int);
 
 #endif /* SEARCH_ALGOS_H */
