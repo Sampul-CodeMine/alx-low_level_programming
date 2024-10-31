@@ -151,16 +151,16 @@ What are the different steps to form an executable file from C source code
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-- [x] /* Comment */
-- [ ] # Comment
-- [ ] /*
-Comment
-*/
-- [x] /*
- * Comment
- */
-- [ ] // Comment
-- [ ] /* Comment /* nested */ */
+- [x] > /* Comment */
+- [ ] > # Comment
+- [ ] > /*
+> Comment
+> */
+- [x] > /*
+ > * Comment
+ > */
+- [ ] > // Comment
+- [ ] > /* Comment /* nested */ */
 
 #### Question #4
 
