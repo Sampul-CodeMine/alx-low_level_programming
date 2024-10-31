@@ -4,7 +4,7 @@
 
 _For this project, we expect you to look at this concept:_
 
-- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](../../alx-pre_course/resources/sandbox_struggles.md)
+- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](../resources/sandbox_struggles.md)
 
 ## Resources
 
