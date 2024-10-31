@@ -151,20 +151,15 @@ What are the different steps to form an executable file from C source code
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-- [x] ```c
-/* Comment */
-```
+> - [x] `/* Comment */`
 
-- [ ] ```python
-# Comment
-```
+> - [ ] `# Comment`
 
-
-- [ ] ```c
-/*
-    Comment
-*/
-```
+> - [ ] ```c
+> /*
+>    Comment
+> */
+> ```
 
 - [x] ```c
 /*
