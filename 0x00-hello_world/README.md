@@ -24,7 +24,7 @@ _For this project, we expect you to look at these concepts:_
 - [Hash-bang under the hood](https://x.com/unix_byte/status/1024147947393495040?s=21&mx=2) (Look at only after you finish consuming the other resources)
 - [Linus Torvalds on C vs. C++](http://harmful.cat-v.org/software/c++/linus) (Look at only after you finish consuming the other resources)
 
-#### man or help:
+#### man or help
 
 - `gcc`
 - `printf (3)`
@@ -153,7 +153,7 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
 
 - [x] `/* Comment */`
 - [ ] `# Comment`
-- [ ]  /\*<br>Comment<br>*/
+- [ ]  /\*<br>&Tab;Comment<br>*/
 - [x] /*<br>&nbsp;\* Comment<br>&nbsp;\*/
 - [ ] `// Comment`
 - [ ] `/* Comment /* nested */ */`
