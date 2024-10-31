@@ -31,7 +31,7 @@ _For this project, we expect you to look at this concept:_
 
 ## Learning Objectives
 
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.alxswe.com/rltoken/qBrRkO5QsdzGun5FkaMooQ "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to explain to anyone, **without the help of Google**:
 
 ### General
 
@@ -97,10 +97,10 @@ Which of the following are valid `while` or `do/while` statements in ANSI C and 
 
 Please select all correct answers
 
--   [ ] ```
-    while (a = 0; a &lt; b; a++)
-    {
-        printf("%d\n", a);
+-   [ ] ```<br>
+    while (a = 0; a &lt; b; a++)<br>
+    {<br>
+        printf("%d\n", a);<br>
     }
     ```
 
