@@ -4,7 +4,7 @@
 
 _For this project, we expect you to look at these concepts:_
 
-- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](../resources/sandbox_struggles.md)
+- [Struggling with the sandbox? Try this: Using Docker & WSL on your local host](https://github.com/Sampul-CodeMine/alx-pre_course/blob/master/resources/sandbox_struggles.md)
 - [C programming](../resources/about_c.pdf)
 
 [![Hello World - C Programming](https://img.youtube.com/watch?v=co0b0xLEuRM)](https://www.youtube.com/watch?v=co0b0xLEuRM)
