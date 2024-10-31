@@ -509,9 +509,6 @@ julien@ubuntu:~/c/0x00$
 > - Directory: `0x00-hello_world`
 > - File: `101-quote.c`
 
-Copyright © 2024 ALX, All rights reserved.
-
-
 ---
 
 > Dukeson Ehigboria O.
