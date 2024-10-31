@@ -242,13 +242,9 @@ Please select all correct answers
 
 ### 0\. Positive anything is better than negative nothing
 
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
-
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print whether the number stored in the variable `n` is positive or negative.
 
--   You can find the source code [here](https://intranet.alxswe.com/rltoken/Dg4SuuP8gvRYnE54wktySg "here")
+-   You can find the source code [here](https://github.com/alx-tools/0x01.c/blob/master/0-positive_or_negative_c "here")
 -   The variable `n` will store a different value every time you will run this program
 -   You don’t have to understand what `rand`, `srand`, `RAND_MAX` do. Please do not touch this code
 -   The output of the program should be:
@@ -285,56 +281,11 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `0-positive_or_negative.c`
 
-Check submission
-
-×
-
-#### Correction of "0. Positive anything is better than negative nothing"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 0\. Positive anything is better than negative nothing
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 1\. The last digit
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 This program will assign a random number to the variable `n` each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable `n`.
 
--   You can find the source code [here](https://intranet.alxswe.com/rltoken/rud8wr5x6VWeahUtd5P14A "here")
+-   You can find the source code [here](https://github.com/alx-tools/0x01.c/blob/master/1-last_digit_c "here")
 -   The variable `n` will store a different value every time you run this program
 -   You don’t have to understand what `rand`, `srand`, and `RAND_MAX` do. Please do not touch this code
 -   The output of the program should be:
@@ -383,52 +334,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `1-last_digit.c`
 
-Check submission
-
-×
-
-#### Correction of "1. The last digit"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 1\. The last digit
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 2\. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -449,52 +355,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `2-print_alphabet.c`
 
-Check submission
-
-×
-
-#### Correction of "2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 2\. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 3\. alphABET
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 
@@ -515,52 +376,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `3-print_alphabets.c`
 
-Check submission
-
-×
-
-#### Correction of "3. alphABET"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 3\. alphABET
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 4\. When I was having that alphabet soup, I never thought that it would pay off
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -583,52 +399,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `4-print_alphabt.c`
 
-Check submission
-
-×
-
-#### Correction of "4. When I was having that alphabet soup, I never thought that it would pay off"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 4\. When I was having that alphabet soup, I never thought that it would pay off
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 5\. Numbers
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
@@ -647,52 +418,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `5-print_numbers.c`
 
-Check submission
-
-×
-
-#### Correction of "5. Numbers"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 5\. Numbers
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 6\. Numberz
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all single digit numbers of base 10 starting from `0`, followed by a new line.
 
@@ -714,52 +440,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `6-print_numberz.c`
 
-Check submission
-
-×
-
-#### Correction of "6. Numberz"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 6\. Numberz
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 7\. Smile in the mirror
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 
@@ -780,52 +461,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `7-print_tebahpla.c`
 
-Check submission
-
-×
-
-#### Correction of "7. Smile in the mirror"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 7\. Smile in the mirror
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 8\. Hexadecimal
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 
@@ -846,52 +482,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `8-print_base16.c`
 
-Check submission
-
-×
-
-#### Correction of "8. Hexadecimal"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 8\. Hexadecimal
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 9\. Patience, persistence and perspiration make an unbeatable combination for success
-
-mandatory
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all possible combinations of single-digit numbers.
 
@@ -915,52 +506,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `9-print_comb.c`
 
-Check submission
-
-×
-
-#### Correction of "9. Patience, persistence and perspiration make an unbeatable combination for success"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 9\. Patience, persistence and perspiration make an unbeatable combination for success
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 10\. Inventing is a combination of brains and materials. The more brains you use, the less material you need
-
-#advanced
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all possible different combinations of two digits.
 
@@ -987,52 +533,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `100-print_comb3.c`
 
-Check submission
-
-×
-
-#### Correction of "10. Inventing is a combination of brains and materials. The more brains you use, the less material you need"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 10\. Inventing is a combination of brains and materials. The more brains you use, the less material you need
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 11\. The success combination in business is: Do what you do better... and: do more of what you do...
-
-#advanced
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all possible different combinations of three digits.
 
@@ -1059,52 +560,7 @@ julien@ubuntu:~/0x01$
 -   Directory: `0x01-variables_if_else_while`
 -   File: `101-print_comb4.c`
 
-Check submission
-
-×
-
-#### Correction of "11. The success combination in business is: Do what you do better... and: do more of what you do..."
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 11\. The success combination in business is: Do what you do better... and: do more of what you do...
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
 ### 12\. Software is eating the World
-
-#advanced
-
-Score: 100.0% (Checks completed: 100.0%)
 
 Write a program that prints all possible combinations of two two-digit numbers.
 
@@ -1131,148 +587,6 @@ julien@ubuntu:~/0x01$ ./102-print_comb5
 -   Directory: `0x01-variables_if_else_while`
 -   File: `102-print_comb5.c`
 
-Check submission
+---
 
-×
-
-#### Correction of "12. Software is eating the World"
-
-Start a new test Close
-
-Requirement success
-
-Requirement fail
-
-Code success
-
-Code fail
-
-Efficiency success
-
-Efficiency fail
-
-Text answer success
-
-Text answer fail
-
-Skipped - Previous check failed
-
-Get a sandbox View results
-
-×
-
-#### 12\. Software is eating the World
-
-##### Commit used:
-
--   **User:** \---
--   **URL:** Click here
--   **ID:** `---`
--   **Author:** \---
--   **Subject:** _\---_
--   **Date:** \---
-
-×
-
-#### Recommended Sandbox
-
-Running only
-
-### 1 image<small class="ml-2">(0/2 Sandboxes spawned)</small>
-
-### Ubuntu 20.04
-
-Basic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Foundations
-
-Run
-
-Copyright © 2024 ALX, All rights reserved.
-
-window.userpilotSettings={token:"NX-b636a33d"};
-
-×
-
-#### Markdown Guide
-
-#### Emphasis
-
-```
-**<strong>bold</strong>**
-*<em>italics</em>*
-~~<strike>strikethrough</strike>~~
-```
-
-#### Headers
-
-```
-# Big header
-## Medium header
-### Small header
-#### Tiny header
-```
-
-#### Lists
-
-```
-* Generic list item
-* Generic list item
-* Generic list item
-
-1. Numbered list item
-2. Numbered list item
-3. Numbered list item
-```
-
-#### Links
-
-```
-[Text to display](http://www.example.com)
-```
-
-#### Quotes
-
-```
-&gt; This is a quote.
-&gt; It can span multiple lines!
-```
-
-#### Images
-
-CSS style available: `width, height, opacity`
-
-```
-![](http://www.example.com/image.jpg)
-![](http://www.example.com/image.jpg | width: 200px)
-![](http://www.example.com/image.jpg | height: 124px | width: 80px | opacity: 0.6)
-```
-
-#### Tables
-
-```
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
-| John     | Doe      | Male     |
-| Mary     | Smith    | Female   |
-
-<em>Or without aligning the columns...</em>
-
-| Column 1 | Column 2 | Column 3 |
-| -------- | -------- | -------- |
-| John | Doe | Male |
-| Mary | Smith | Female |
-```
-
-#### Displaying code
-
-````
-`var example = "hello!";`
-
-<em>Or spanning multiple lines...</em>
-
-```
-var example = "hello!";
-alert(example);
-```
-````
-
-window.codySettings = { widget\_id: "9993bc72-2258-452b-a4bf-b2fe1ad5e0d7" }; !function(){var t=window,e=document,a=function(){var t=e.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://trinketsofcody.com/cody-widget.js";var a=e.getElementsByTagName("script")\[0\];a.parentNode.insertBefore(t,a)};"complete"===document.readyState?a():t.attachEvent?t.attachEvent("onload",a):t.addEventListener("load",a,!1)}(); for(var dl=window.dataLayer||\[\],user=void 0,i=0;i<dl.length;i++)if(dl\[i\].userId){user=dl\[i\];break}user&&user.batch&&user.curriculum&&(userpilot.identify("savanna-"+user.userId.toString(),{cohortId:user.batch.id,cohortName:user.batch.fullNameWithC,locationId:user.batch.schoolLocation.id,locationName:user.batch.schoolLocation.name,curriculumId:user.curriculum.id,curriculumName:user.curriculum.name}),userpilot.reload());
+> Dukeson Ehigboria O.
