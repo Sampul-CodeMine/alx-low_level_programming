@@ -10,7 +10,7 @@ _For this project, we expect you to look at this concept:_
 
 **Read or watch**:
 
-- [Everything you need to know to start with C.pdf]((../resources/about_c.pdf) (_You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”._)
+- [Everything you need to know to start with C.pdf](../resources/about_c.pdf) (_You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”._)
 - [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html "Keywords and identifiers")
 - [integers](https://publications.gbdirect.co.uk/c_book/chapter2/integral_types.html "integers")
 - [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm "Arithmetic Operators in C")
