@@ -153,25 +153,10 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
 
 - [x] `/* Comment */`
 - [ ] `# Comment`
-- [ ] > ```c
-> /*
->    Comment
-> */
-> ```
-
-- [x] ```c
-/*
- * Comment
- */
-```
-
-- [ ] ```javascript
-// Comment
-```
-
-- [ ] ```c
-/* Comment /* nested */ */
-```
+- [ ]  /\*<br>Comment<br>*/
+- [x] /*<br>&nbsp;\* Comment<br>&nbsp;\*/
+- [ ] `// Comment`
+- [ ] `/* Comment /* nested */ */`
 
 #### Question #4
 
