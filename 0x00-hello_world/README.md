@@ -511,4 +511,16 @@ julien@ubuntu:~/c/0x00$
 
 ---
 
+## Ways to Perform the following Compilation Stages or processes in C Language
+
+We will be going through the different processes of compiling a C source code assuming the filename is `test.c`
+
+
+### Preprocessing
+
+```bash
+$ gcc -Wall -Werror -Wextra -pedantic -E test.c > test.process
+```
+
+
 > Dukeson Ehigboria O.
