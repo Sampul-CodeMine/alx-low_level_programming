@@ -97,12 +97,7 @@ Which of the following are valid `while` or `do/while` statements in ANSI C and 
 
 Please select all correct answers
 
--   [ ] ```<br>
-    while (a = 0; a &lt; b; a++)<br>
-    {<br>
-        printf("%d\n", a);<br>
-    }
-    ```
+-   [ ] `while (a = 0; a &lt; b; a++)<br>{<br>&tab;printf("%d\n", a);<br>}`
 
 -   [ ] ```
     a = 0;
